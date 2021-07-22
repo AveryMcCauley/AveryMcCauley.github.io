@@ -75,7 +75,7 @@ h2 {
 }
 h1::after {
   content: '';
-  width: 80px;
+  width: 95px;
   display: block;
   background: #fff;
   height: 10px;
