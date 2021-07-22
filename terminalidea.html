@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+
+
+    <meta http-equiv="content-type"
+        content="text/html; charset=UTF-8">
+ 
+    <meta name="viewport" content="width=device-width,
+        minimum-scale=1,initial-scale=1">
+ 
+    <script src=
+        "https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+ 
+    <script src=
+"https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js">
+    </script>
+ 
+    <link rel="stylesheet" href=
+"https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
+ 
+    <style type="text/css">
+        .terminal,
+        span,
+        .cmd,
+        div {
+            --color: rgb(127, 255, 0);
+        }
+ 
+        .terminal,
+        span {
+            --size: 1.2;
+        }
+        
+    </style>
+</head>
+<body>
+<script>
+$('body').terminal({
+   showme: function (name) {
+        this.echo('       _                         __  __       ____            _              \n'            
++'      / \\\__   _____ _ __ _   _  |  \\\/  | ___ / ___|__ _ _   _| | ___ _   _   \n' 
++'     / _ \\\\ \ / / _ \\\  __| | | | | |\\\/| |/ __| |   / _` | | | | |/ _ \\\ | | |  \n'
++'    / ___ \\\ V /  __/ |  | |_| | | |  | | (__| |__| (_| | |_| | |  __/ |_| |  \n'
++'   /_/   \_\\\\_/ \\\___|_|   \\\__, | |_|  |_|\\\___|\\\____\\\__,_|\\\__,_|_|\\\___|\\\__, |  \n'
++'                          |___/                                       |___/  \n');
+    },
+
+   about_me: function () {
+        this.echo('Hi! I am a double major at the Leeds School of Business and the College of Engineering and Applied Science at CU Boulder.\n'
+        + 'In business, I am focusing on Information Management, and am a member of Leeds Scholars- a program that has provided me \nwith opportunities to build'
+        +' leadership skills, travel, and volunteer.\nIn engineering, I am a Computer Science major, with a focus in cybersecurity.\n'
+        +'Outside of school, I find joy in volunteering at homeless and animal shelters. I also love to read, play music, and make art. \n');
+    },
+    
+    education: function () {
+		this.echo('University of Colorado Boulder: \n Leeds School of Business: Bachelors of Science - Information Management\n College of Engineering and Applied Science: Bachelors of Arts - Computer Science \n');
+    },
+    
+    work_experience: function (){
+    	this.echo('Lead IT Technician - Leeds School of Business             2020 - present\n - troubleshoot technology issues on Mac and Window computers\n - configure computer builds\n - back up data and wipe computers to eliminate viruses\n');
+    }, 
+    
+   
+    
+    
+}, {
+    greetings: 'The resume of:\n'+ 
+   '       _                         __  __       ____            _              \n'            
++'      / \\\__   _____ _ __ _   _  |  \\\/  | ___ / ___|__ _ _   _| | ___ _   _   \n' 
++'     / _ \\\\ \ / / _ \\\  __| | | | | |\\\/| |/ __| |   / _` | | | | |/ _ \\\ | | |  \n'
++'    / ___ \\\ V /  __/ |  | |_| | | |  | | (__| |__| (_| | |_| | |  __/ |_| |  \n'
++'   /_/   \_\\\\_/ \\\___|_|   \\\__, | |_|  |_|\\\___|\\\____\\\__,_|\\\__,_|_|\\\___|\\\__, |  \n'
++'                          |___/                                       |___/  \n'
++ 'Options:\n' + 'Enter any of the following commands:\n' + '  about_me\n' + '  education\n' + '  work_experience\n'
+});
+
+</script>
+</body>
+</html>
