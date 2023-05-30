@@ -2,8 +2,6 @@
 <html lang="en">
  
 <head>
-
-
     <meta http-equiv="content-type"
         content="text/html; charset=UTF-8">
  
@@ -14,12 +12,11 @@
         "https://code.jquery.com/jquery-3.3.1.min.js">
     </script>
  
-    <script src=
-"https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js">
+    <script src= 
+	"https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js">
     </script>
  
-    <link rel="stylesheet" href=
-"https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
+    <link rel="stylesheet" href= "https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
  
     <style type="text/css">
         .terminal,
@@ -33,9 +30,10 @@
         span {
             --size: 1.2;
         }
-        
     </style>
+	
 </head>
+	
 <body>
 <script>
 $('body').terminal({
@@ -49,30 +47,30 @@ $('body').terminal({
     },
 
    about_me: function () {
-        this.echo('Hi! I am a double major at the Leeds School of Business and the College of Engineering and Applied Science at CU Boulder.\n'
-        + 'In business, I am focusing on Information Management, and am a member of Leeds Scholars- a program that has provided me \nwith opportunities to build'
-        +' leadership skills, travel, and volunteer.\nIn engineering, I am a Computer Science major, with a focus in cybersecurity.\n'
-        +'Outside of school, I find joy in volunteering at homeless and animal shelters. I also love to read, play music, and make art. \n');
+        this.echo('\n Hello World! \n '
+	+ 'My name is Avery. I am passionate about cybersecurity and am beginning a career in penetration testing. \n'
+	+ 'I have dual degrees in Computer Science from the College of Engineering and Applied Science and in Information Management from the Leeds School of Business at CU Boulder.\n'
+        + 'Outside of my interests in cybersecurity, I find joy in playing volleyball or volunteering at the Saint Francis Center to assist those experiencing homelessness.'
+	+ ' I also love to read, play piano, and make art. \n');
     },
     
     education: function () {
-		this.echo('University of Colorado Boulder: \n Leeds School of Business: Bachelors of Science - Information Management\n College of Engineering and Applied Science: Bachelors of Arts - Computer Science \n');
+		this.echo('\n University of Colorado Boulder: \n'
+			  + 'College of Engineering and Applied Science: Bachelors of Arts - Computer Science \n'
+			  + 'Leeds School of Business: B.S. - Information Management \n');
     },
     
     work_experience: function (){
-    	this.echo('Advance Summer Intern - PricewaterhouseCoopers            Summer 2022\n'
+    	this.echo('\n Advance Summer Intern - PricewaterhouseCoopers            Summer 2022 \n'
 	+ '- Completed mock penetration test challenges, including exploiting insecure network protocols,\n'
 	+ ' analyzing LSASS process memory dumps, kerberoasting, navigating Active Directory, lateral movement, and privilege escalation\n'
 	+ '- Developed a custom Google App Script to automate a data entry process with the potential to save over 20 hours of manual labor\n'
 	+ '\n'
-	+ 'Lead IT Technician - Leeds School of Business             2020 - 2023\n'
-	+ '- Supported Windows and MacOS machines, including experience in virus removal and data back-ups\n'
-	+ '- Utilized troubleshooting skills to solve problems on the spot in a dynamic technology environment\n'
-	+ '- Developed effective communication skills regarding complex technical issues with non-technical target audiences\n');
+	+ 'Lead IT Technician - Leeds School of Business             2020 - 2023 \n'
+	+ '- Supported Windows and MacOS machines, including experience in virus removal and data back-ups \n'
+	+ '- Utilized troubleshooting skills to solve problems on the spot in a dynamic technology environment \n'
+	+ '- Developed effective communication skills regarding complex technical issues with non-technical target audiences \n');
     }, 
-    
-   
-    
     
 }, {
     greetings: 'The resume of:\n'+ 
