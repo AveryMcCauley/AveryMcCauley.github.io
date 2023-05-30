@@ -3,34 +3,79 @@
 <head>
   <title>My Read Books</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+    
+    .book-card {
+      width: 200px;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    
+    .book-image {
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    
+    .book-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .book-author {
+      margin-bottom: 10px;
+    }
+    
+    .rating {
+      color: orange;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1 class="mt-5">Books I've Read</h1>
-    <table class="table table-striped table-hover">
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Cover</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Book 1</td>
-          <td>Author 1</td>
-          <td><img src="book1_cover.jpg" alt="Book 1 Cover" class="img-fluid"></td>
-        </tr>
-        <tr>
-          <td>Book 2</td>
-          <td>Author 2</td>
-          <td><img src="book2_cover.jpg" alt="Book 2 Cover" class="img-fluid"></td>
-        </tr>
-        <!-- Add more rows for additional books -->
-      </tbody>
-    </table>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="book-card">
+          <img src="book1_cover.jpg" alt="Book 1 Cover" class="book-image img-fluid">
+          <h5 class="book-title">Book 1</h5>
+          <p class="book-author">Author 1</p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="book-card">
+          <img src="book2_cover.jpg" alt="Book 2 Cover" class="book-image img-fluid">
+          <h5 class="book-title">Book 2</h5>
+          <p class="book-author">Author 2</p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Add more book cards -->
+    </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
 </html>
