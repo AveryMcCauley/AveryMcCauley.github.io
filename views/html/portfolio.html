@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Define the grid container */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+    
+    /* Define the grid items */
+    .grid-item {
+      width: 100%;
+      height: 100%;
+    }
+    
+    /* Make the images responsive within the grid items */
+    .grid-item img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="../../images/art/Elsewhere.JPG" alt="Artwork 1">
+    </div>
+    <div class="grid-item">
+      <img src="art2.jpg" alt="Artwork 2">
+    </div>
+    <div class="grid-item">
+      <img src="art3.jpg" alt="Artwork 3">
+    </div>
+    <!-- Add more grid items as needed -->
+  </div>
+</body>
+</html>
