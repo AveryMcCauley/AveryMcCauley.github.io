@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+ <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -19,26 +19,26 @@
 
     /* Main section styles */
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
       margin: 20px;
     }
 
     .gallery-item {
+      flex: 0 0 calc(33.33% - 20px);
       background-color: #f4f4f4;
       padding: 20px;
       text-align: center;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
     }
 
     .gallery-item img {
       max-width: 100%;
       height: auto;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
       border-radius: 5px;
     }
 
