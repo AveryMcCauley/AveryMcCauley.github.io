@@ -9,28 +9,28 @@
       padding: 0;
     }
 
+
+
     /* Main section styles */
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
       margin: 20px;
     }
 
     .gallery-item {
-      flex: 0 0 calc(33.33% - 20px);
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background-color: #f4f4f4;
+      padding: 20px;
+      text-align: center;
     }
 
     .gallery-item img {
       max-width: 100%;
       height: auto;
-      display: block;
-      border-radius: 5px;
     }
+
+
   </style>
 
 <body>
