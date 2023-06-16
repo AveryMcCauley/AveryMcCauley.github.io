@@ -6,18 +6,23 @@
 <html>
 <head>
   <style>
-
-
-   .gallery {
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(8, 5vw);
-      grid-gap: 15px;
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
-  .gallery-item {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+  
+  .gallery > li {
+    flex-basis: 350px; /* width: 350px; */
+  }
+  
+  .gallery li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
   }
   </style>
 
