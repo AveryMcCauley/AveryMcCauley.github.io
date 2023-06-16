@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <style>
+  <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -20,18 +20,14 @@
     /* Main section styles */
     .gallery {
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
       margin: 20px;
     }
 
     .gallery-item {
-      flex: 0 0 calc(33.33% - 20px);
-      background-color: #f4f4f4;
-      padding: 20px;
-      text-align: center;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: calc(33.33% - 20px);
       margin-bottom: 20px;
     }
 
@@ -43,8 +39,8 @@
     }
 
     .gallery-item h3 {
-      flex: 0 0 calc(33.33% - 20px);
-      margin-bottom: 20px;
+      margin-top: 10px;
+      font-size: 1.2em;
     }
 
     .gallery-item p {
