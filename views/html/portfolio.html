@@ -5,160 +5,92 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
   <style>
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  .gallery > li {
-    flex-basis: 350px; /* width: 350px; */
-  }
-  
-  .gallery li img {
-    object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
     max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border-radius: 5px;
   }
+}
   </style>
 
 <body>
-  <div class="gallery">
-    <div class="gallery-item">
+  <div class="column">
       <img src="../../images/art/IMG_5249.JPG" alt="Artwork 1">
-    </div>
-    <div class="gallery-item">
       <img src="../../images/art/The_Great_Depression.JPG" alt="Artwork 2">
-    </div>
-    <div class="gallery-item">
       <img src="../../images/art/IMG_4973.JPG" alt="girl with black hair">
-    </div>
-    <div class="gallery-item">
       <img src="../../images/art/IMG_0718.JPG" alt="red paint face">
-    </div>
-    <div class="gallery-item">
       <img src="../../images/art/IMG_4355.JPG" alt="computer girl">
-    </div>
-     <div class="gallery-item">
       <img src="../../images/art/IMG_1606.jpeg" alt="trapped">
-    </div>
-  
-    <div class="gallery-item">
       <img src="../../images/art/Eternal_Monday.JPG" alt="Artwork 5">
-    </div>
-
-    <div class="gallery-item">
-
-          <img src="../../images/art/IMG_5002.JPG" alt="Artwork 3">
-    </div>
-
-     <div class="gallery-item">
+      <img src="../../images/art/IMG_5002.JPG" alt="Artwork 3">
       <img src="../../images/art/Van_Lexapro.JPG" alt="Artwork 5">
-    </div>
-    
-    <div class="gallery-item">
       <img src="../../images/art/IMG_0511.JPG" alt="Artwork 6">
-    </div>
-    <div class="gallery-item">
+    
       <img src="../../images/art/IMG_0518.JPG" alt="Artwork 5">
-    </div>
-    <div class="gallery-item">
       <img src="../../images/art/IMG_0707.JPG" alt="Artwork 5">
-    </div>
-     <div class="gallery-item">
       <img src="../../images/art/IMG_1543.jpeg" alt="creation">  
-    </div>
-    
-    <div class="gallery-item">
       <img src="../../images/art/IMG_4894.jpg" alt="girl pencil portrait">
-    </div>
-    
-     <div class="gallery-item">
       <img src="../../images/art/IMG_0587.JPG" alt="Artwork 9">
     </div>
-     <div class="gallery-item">
+    
+  <div class="column">
       <img src="../../images/art/IMG_0597.JPG" alt="Artwork 10">
-    </div>
-     <div class="gallery-item">
       <img src="../../images/art/IMG_0632 4.30.00 PM.jpeg" alt="Artwork 11">
-     </div>
-     <div class="gallery-item">
       <img src="../../images/art/IMG_4326.JPG" alt="glasses">  
-    </div>
-    
-     <div class="gallery-item">
       <img src="../../images/art/IMG_4305.JPG" alt="creation">  
-    </div>
-    
-     <div class="gallery-item">
       <img src="../../images/art/IMG_1028.JPG" alt="Artwork 3">
-    </div>
-    
-     <div class="gallery-item">
       <img src="../../images/art/IMG_1138.jpeg" alt="Artwork 3">
-    </div>
-    
-     <div class="gallery-item">
       <img src="../../images/art/IMG_1140.jpeg" alt="Artwork 3">
-    </div>
-     <div class="gallery-item">
       <img src="../../images/art/IMG_1141 3.50.16 PM.jpeg" alt="Artwork 3">
-    </div>
-     <div class="gallery-item">
       <img src="../../images/art/IMG_1142.jpeg" alt="Artwork 3">
-    </div>
-     <div class="gallery-item">
       <img src="../../images/art/sketch1.JPG" alt="Artwork 3">
-    </div>
- 
-    <div class="gallery-item">
+
       <img src="../../images/art/sketch2.JPG" alt="Artwork 3">
-    </div>
-     <div class="gallery-item">
       <img src="../../images/art/sketch3.JPG" alt="Artwork 3">
-    </div>
-    <div class="gallery-item">
       <img src="../../images/art/snek.jpeg" alt="snek">
-    </div>
-    <div class="gallery-item">
       <img src="../../images/art/IMG_4490.JPG" alt="all-consuming">
-    </div>
-    
-    <div class="gallery-item">
       <img src="../../images/art/Elsewhere.JPG" alt="Artwork 3">
-    </div>
-    <div class="gallery-item">
       <img src="../../images/art/A_Puddle_With_Legsjpeg.jpeg" alt="Artwork 4">
     </div>
 
      
-     <div class="gallery-item">
+    <div class="column">
       <img src="../../images/art/IMG_4968.JPG" alt="Artwork 3">
-    </div>
-     <div class="gallery-item">
       <img src="../../images/art/IMG_4941.JPG" alt="Artwork 3">
-    </div>
-     <div class="gallery-item">
       <img src="../../images/art/IMG_4373.JPG" alt="Artwork 3">
-    </div>
-    <div class="gallery-item">
       <img src="../../images/art/IMG_1318 4.01.25 PM.jpeg" alt="Artwork 3">
-    </div>
-     <div class="gallery-item">
       <img src="../../images/art/IMG_4881 3.33.20 PM.jpeg" alt="Artwork 3">
-    </div>
-        <div class="gallery-item">
       <img src="../../images/art/IMG_5061.jpeg" alt="Artwork 3">
-    </div>
-     <div class="gallery-item">
       <img src="../../images/art/astro.jpeg" alt="Artwork 3">
     </div>
    
 
-  </div>
 </body>
 </html>
