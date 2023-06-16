@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!DOCTYPE html>
+<html>
+<head>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -9,28 +12,28 @@
       padding: 0;
     }
 
-
-
     /* Main section styles */
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       margin: 20px;
     }
 
     .gallery-item {
-      background-color: #f4f4f4;
-      padding: 20px;
-      text-align: center;
+      flex: 0 0 calc(33.33% - 20px);
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .gallery-item img {
       max-width: 100%;
       height: auto;
+      display: block;
+      border-radius: 5px;
     }
-
-
   </style>
 
 <body>
@@ -56,7 +59,11 @@
   
     <div class="gallery-item">
       <img src="../../images/art/Eternal_Monday.JPG" alt="Artwork 5">
-      <img src="../../images/art/IMG_5002.JPG" alt="Artwork 3">
+    </div>
+
+    <div class="gallery-item">
+
+          <img src="../../images/art/IMG_5002.JPG" alt="Artwork 3">
     </div>
 
      <div class="gallery-item">
@@ -65,11 +72,13 @@
     
     <div class="gallery-item">
       <img src="../../images/art/IMG_0511.JPG" alt="Artwork 6">
-      <img src="../../images/art/IMG_0518.JPG" alt="Artwork 7"> 
-      <img src="../../images/art/IMG_0707.JPG" alt="Artwork 8">
-
     </div>
-    
+    <div class="gallery-item">
+      <img src="../../images/art/IMG_0518.JPG" alt="Artwork 5">
+    </div>
+    <div class="gallery-item">
+      <img src="../../images/art/IMG_0707.JPG" alt="Artwork 5">
+    </div>
      <div class="gallery-item">
       <img src="../../images/art/IMG_1543.jpeg" alt="creation">  
     </div>
@@ -86,8 +95,9 @@
     </div>
      <div class="gallery-item">
       <img src="../../images/art/IMG_0632 4.30.00 PM.jpeg" alt="Artwork 11">
-      <img src="../../images/art/IMG_4326.JPG" alt="glasses">
-       
+     </div>
+     <div class="gallery-item">
+      <img src="../../images/art/IMG_4326.JPG" alt="glasses">  
     </div>
     
      <div class="gallery-item">
