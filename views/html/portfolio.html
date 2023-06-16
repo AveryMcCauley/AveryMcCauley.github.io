@@ -1,193 +1,151 @@
 
 <!DOCTYPE html>
 <html>
-<!DOCTYPE html>
-<html>
 <head>
  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+    /* Define the grid container */
+    .grid-container {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-column-gap: 10%;
+       grid-row-gap: 11.1%;
+       padding-bottom: 10%;
     }
-
-    /* Header styles */
-    header {
-      background-color: #1a1a1a;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    /* Main section styles */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 20px;
-      margin: 20px;
-    }
-
-    .gallery-item {
-      background-color: #f4f4f4;
-      padding: 20px;
-      text-align: center;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .gallery-item img {
-      max-width: 100%;
+    
+    /* Define the grid items */
+    .grid-item {
+      width: 100%;
       height: auto;
-      border-radius: 5px;
     }
-
-    .gallery-item h3 {
-      margin-top: 10px;
-      font-size: 1.2em;
-    }
-
-    .gallery-item p {
-      margin-top: 5px;
-      font-size: 0.9em;
-      color: #888;
-    }
-
-    /* Footer styles */
-    footer {
-      background-color: #1a1a1a;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9em;
+    
+    /* Make the images responsive within the grid items */
+    .grid-item img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Avery McCauley</h1>
-  </header>
-
-
-
-  <div class="gallery">
-    <div class="gallery-item">
+  <div class="grid-container">
+    <div class="grid-item">
       <img src="../../images/art/IMG_5249.JPG" alt="Artwork 1">
     </div>
-    <div class="gallery-item">
+    <div class="grid-item">
       <img src="../../images/art/The_Great_Depression.JPG" alt="Artwork 2">
     </div>
-    <div class="gallery-item">
+    <div class="grid-item">
       <img src="../../images/art/IMG_4973.JPG" alt="girl with black hair">
     </div>
-    <div class="gallery-item">
+    <div class="grid-item">
       <img src="../../images/art/IMG_0718.JPG" alt="red paint face">
     </div>
-    <div class="gallery-item">
+    <div class="grid-item">
       <img src="../../images/art/IMG_4355.JPG" alt="computer girl">
     </div>
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_1606.jpeg" alt="trapped">
     </div>
   
-    <div class="gallery-item">
+    <div class="grid-item">
       <img src="../../images/art/Eternal_Monday.JPG" alt="Artwork 5">
       <img src="../../images/art/IMG_5002.JPG" alt="Artwork 3">
     </div>
 
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/Van_Lexapro.JPG" alt="Artwork 5">
     </div>
     
-    <div class="gallery-item">
+    <div class="grid-item">
       <img src="../../images/art/IMG_0511.JPG" alt="Artwork 6">
       <img src="../../images/art/IMG_0518.JPG" alt="Artwork 7"> 
       <img src="../../images/art/IMG_0707.JPG" alt="Artwork 8">
 
     </div>
     
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_1543.jpeg" alt="creation">  
     </div>
     
-    <div class="gallery-item">
+    <div class="grid-item">
       <img src="../../images/art/IMG_4894.jpg" alt="girl pencil portrait">
     </div>
     
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_0587.JPG" alt="Artwork 9">
     </div>
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_0597.JPG" alt="Artwork 10">
     </div>
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_0632 4.30.00 PM.jpeg" alt="Artwork 11">
       <img src="../../images/art/IMG_4326.JPG" alt="glasses">
        
     </div>
     
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_4305.JPG" alt="creation">  
     </div>
     
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_1028.JPG" alt="Artwork 3">
     </div>
     
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_1138.jpeg" alt="Artwork 3">
     </div>
     
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_1140.jpeg" alt="Artwork 3">
     </div>
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_1141 3.50.16 PM.jpeg" alt="Artwork 3">
     </div>
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_1142.jpeg" alt="Artwork 3">
     </div>
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/sketch1.JPG" alt="Artwork 3">
     </div>
  
-    <div class="gallery-item">
+    <div class="grid-item">
       <img src="../../images/art/sketch2.JPG" alt="Artwork 3">
       <img src="../../images/art/sketch3.JPG" alt="Artwork 3">
     </div>
-    <div class="gallery-item">
+    <div class="grid-item">
       <img src="../../images/art/snek.jpeg" alt="snek">
     </div>
-    <div class="gallery-item">
+    <div class="grid-item">
       <img src="../../images/art/IMG_4490.JPG" alt="all-consuming">
     </div>
     
-    <div class="gallery-item">
+    <div class="grid-item">
       <img src="../../images/art/Elsewhere.JPG" alt="Artwork 3">
     </div>
-    <div class="gallery-item">
+    <div class="grid-item">
       <img src="../../images/art/A_Puddle_With_Legsjpeg.jpeg" alt="Artwork 4">
     </div>
 
      
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_4968.JPG" alt="Artwork 3">
     </div>
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_4941.JPG" alt="Artwork 3">
     </div>
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_4373.JPG" alt="Artwork 3">
     </div>
-    <div class="gallery-item">
+    <div class="grid-item">
       <img src="../../images/art/IMG_1318 4.01.25 PM.jpeg" alt="Artwork 3">
     </div>
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/IMG_4881 3.33.20 PM.jpeg" alt="Artwork 3">
     </div>
-        <div class="gallery-item">
+        <div class="grid-item">
       <img src="../../images/art/IMG_5061.jpeg" alt="Artwork 3">
     </div>
-     <div class="gallery-item">
+     <div class="grid-item">
       <img src="../../images/art/astro.jpeg" alt="Artwork 3">
     </div>
    
