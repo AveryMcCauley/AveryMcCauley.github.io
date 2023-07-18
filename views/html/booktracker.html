@@ -1,114 +1,123 @@
 <!DOCTYPE html>
 <html>
-  
 <head>
   <title>My Read Books</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
- 
   <style>
-   
-    <comment https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp ></comment>
-      .row {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0 4px;
-      }
-    .column {
-      flex: 24.2%;
-      max-width: 24.2%;
-      padding: 0 4px;
+    body {
+      background-color: #F7F9FF;
+      padding: 20px;
+      font-family: "Helvetica-Neue", sans-serif;
     }
-    .column img {
-      margin-top: 8px;
-      vertical-align: middle;
+    
+    .book-card {
       width: 100%;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      text-align: center;
     }
-   
+    
+    .book-image {
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 10px;
     }
+    
     .book-title {
       font-weight: 300;
       margin-bottom: 5px;
     }
+    
     .book-author {
       margin-bottom: 10px;
       font-weight: 300;
     }
+    
     .rating {
       color: yellow;
     }
   </style>
 </head>
 <body>
-  
   <div class="container">
     <center><h1 class="mt-5" color="white" >Book Reviews</h1></center>
     <h5> Disclaimer: <i>This is just like my opinion, man.</i></h5>
-    
     <div class="row">
-      <div class="column">
       
- 
-            <img src="/images/book_covers/1984.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
-            <h5 class="book-title">1984</h5>
-            <p class="book-author">George Orwell</p>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p class="book-review">omg this is literally just like 1984!!1! </p>
+      <div class="col-sm-6 col-md-4">
+        <div class="book-card">
+          <img src="/images/book_covers/1984.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
+          <h5 class="book-title">1984</h5>
+          <p class="book-author">George Orwell</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="book-review">omg this is literally just like 1984!!1! </p>
 
-  
- 
-            <img src="/images/book_covers/candide.jpeg" alt="Book 2 Cover" class="book-image img-fluid">
-            <h5 class="book-title">Candide</h5>
-            <p class="book-author">Voltaire</p>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <p class="book-review">An entertaining satire of optimism and social institutions. A bit too hyperbolic at times. </p>
+        </div>
+      </div>
+
       
-        
-        <div class="col-sm-6 col-md-4">
-          <div class="book-card">
-            <img src="/images/book_covers/in_cold_blood.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
-            <h5 class="book-title">In Cold Blood</h5>
-            <p class="book-author">Truman Capote</p>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p class="book-review">Capote is one of my favorite authors. His writing style is beautiful and heartbreaking. 
-              This book in particular contains a profound commentary on nature vs nuture, 
-              and an early depiction of the correlation betweeen head injuries and violent behavior.  </p>
+      <div class="col-sm-6 col-md-4">
+        <div class="book-card">
+          <img src="/images/book_covers/candide.jpeg" alt="Book 2 Cover" class="book-image img-fluid">
+          <h5 class="book-title">Candide</h5>
+          <p class="book-author">Voltaire</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
           </div>
+          <p class="book-review">An entertaining satire of optimism and social institutions. A bit too hyperbolic at times. </p>
+          
         </div>
-  
-        <div class="col-sm-6 col-md-4">
-          <div class="book-card">
-            <img src="/images/book_covers/poisonwood_bible.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
-            <h5 class="book-title">The Poisonwood Bible</h5>
-            <p class="book-author">Barbara Kingsolver</p>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p class="book-review">One of my all time favorites. A great book if you enjoy alterenating narrators. </p>
+      </div>
+      
+      <div class="col-sm-6 col-md-4">
+        <div class="book-card">
+          <img src="/images/book_covers/in_cold_blood.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
+          <h5 class="book-title">In Cold Blood</h5>
+          <p class="book-author">Truman Capote</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
+          <p class="book-review">Capote is one of my favorite authors. His writing style is beautiful and heartbreaking. 
+            
+            This book in particular contains a profound commentary on nature vs nuture, and an early depiction of the correlation betweeen head injuries and violent behavior.  </p>
+
         </div>
+      </div>
+      
+
+      <div class="col-sm-6 col-md-4">
+        <div class="book-card">
+          <img src="/images/book_covers/poisonwood_bible.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
+          <h5 class="book-title">The Poisonwood Bible</h5>
+          <p class="book-author">Barbara Kingsolver</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="book-review">One of my all time favorites. A great book if you enjoy alterenating narrators. </p>
+
+        </div>
+      </div>
 
       
       <div class="col-sm-6 col-md-4">
@@ -125,28 +134,27 @@
           </div>
           
           <p class="book-review">Not a huge fan- struck me as a "Enlightenment for Dummies". If this book were a person, he's the type to not wear shoes and think he's better than you for it. </p>
+          
         </div>
       </div>
-    </div>
-
-
       
-    <div class="column">
-        <div class="col-sm-6 col-md-4">
-          <div class="book-card">
-            <img src="/images/book_covers/things_fall_apart.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
-            <h5 class="book-title">Things Fall Apart</h5>
-            <p class="book-author">Chinua Achebe</p>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p class="book-review"> They certainly do.</p>
+      <div class="col-sm-6 col-md-4">
+        <div class="book-card">
+          <img src="/images/book_covers/things_fall_apart.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
+          <h5 class="book-title">Things Fall Apart</h5>
+          <p class="book-author">Chinua Achebe</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
+          <p class="book-review"> They certainly do.</p>
+            
+
         </div>
+      </div>
 
         <div class="col-sm-6 col-md-4">
         <div class="book-card">
@@ -177,99 +185,98 @@
              <br> Servant: There’s a lot of it about."</br> </p>
             
 
-          </div>
         </div>
+      </div>
 
           <div class="col-sm-6 col-md-4">
-          <div class="book-card">
-            <img src="/images/book_covers/a_midsummer_night's_dream.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
-            <h5 class="book-title">A Midsummer Night's Dream</h5>
-            <p class="book-author">Bill Shicky-Shake</p>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p class="book-review"> What the Puck? </p>
-  
+        <div class="book-card">
+          <img src="/images/book_covers/a_midsummer_night's_dream.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
+          <h5 class="book-title">A Midsummer Night's Dream</h5>
+          <p class="book-author">Bill Shicky-Shake</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
+          <p class="book-review"> What the Puck? </p>
+
         </div>
-      
+      </div>
+    
+      <div class="col-sm-6 col-md-4">
+        <div class="book-card">
+          <img src="/images/book_covers/the_odyssey.jpg" alt="Book 1 Cover" class="book-image img-fluid">
+          <h5 class="book-title">The Odyssey</h5>
+          <p class="book-author">Homer (not Simpson)</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="book-review"> A bad english teacher ruined this classic for me in high school by including reading quizzes 
+            that asked hyperspecific details such as the name of the man that fell off the roof (Elpenor). </p>
+
+        </div>
+      </div>
+
         <div class="col-sm-6 col-md-4">
-          <div class="book-card">
-            <img src="/images/book_covers/the_odyssey.jpg" alt="Book 1 Cover" class="book-image img-fluid">
-            <h5 class="book-title">The Odyssey</h5>
-            <p class="book-author">Homer (not Simpson)</p>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <p class="book-review"> A bad english teacher ruined this classic for me in high school by including reading quizzes 
-              that asked hyperspecific details such as the name of the man that fell off the roof (Elpenor). </p>
-  
+        <div class="book-card">
+          <img src="/images/book_covers/frankenstein.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
+          <h5 class="book-title">Frankenstein</h5>
+          <p class="book-author">Mary Shelley</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
+          <p class="book-review"> Excellent. The fact that Shelley wrote this at 18 is mind-blowing. </p>
+          <p> "Did I request thee, Maker, from my clay to mould me man? Did I solicit thee from darkness to promote me?" - The Creature, and me after any mild inconvenience</p>
+
         </div>
-  
-          <div class="col-sm-6 col-md-4">
-          <div class="book-card">
-            <img src="/images/book_covers/frankenstein.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
-            <h5 class="book-title">Frankenstein</h5>
-            <p class="book-author">Mary Shelley</p>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p class="book-review"> Excellent. The fact that Shelley wrote this at 18 is mind-blowing. </p>
-            <p> "Did I request thee, Maker, from my clay to mould me man? Did I solicit thee from darkness to promote me?" - The Creature, and me after any mild inconvenience</p>
-  
-          </div>
-        </div>
-  
-  
-          <div class="col-sm-6 col-md-4">
-          <div class="book-card">
-            <img src="/images/book_covers/alice's_adventures_in_wonderland.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
-            <h5 class="book-title">Alice's Adventures In Wonderland</h5>
-            <p class="book-author">Lewis Carroll</p>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <p class="book-review"> It's a good book, but it's a better book if you have the edition illustrated by Salvador Dali. </p>
-  
-          </div>
-        </div>
-  
+      </div>
+
+
         <div class="col-sm-6 col-md-4">
-          <div class="book-card">
-            <img src="/images/book_covers/flowers_in_the_attic.jpg" alt="Book 1 Cover" class="book-image img-fluid">
-            <h5 class="book-title">Flowers in the Attic</h5>
-            <p class="book-author">V. C. Andrews</p>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-            <p class="book-review">Creepy. I would argue that the distrubing themes are sensationalized and not appropriately conveyed the author,
-              especially considering it appears to have a younger target audience. I don't shy away from dark topics, but do so when they read more like a fantasy. </p>
-  
+        <div class="book-card">
+          <img src="/images/book_covers/alice's_adventures_in_wonderland.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
+          <h5 class="book-title">Alice's Adventures In Wonderland</h5>
+          <p class="book-author">Lewis Carroll</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
           </div>
+          <p class="book-review"> It's a good book, but it's a better book if you have the edition illustrated by Salvador Dali. </p>
+
         </div>
-   </div>
-  <div class="column">
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="book-card">
+          <img src="/images/book_covers/flowers_in_the_attic.jpg" alt="Book 1 Cover" class="book-image img-fluid">
+          <h5 class="book-title">Flowers in the Attic</h5>
+          <p class="book-author">V. C. Andrews</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="book-review">Creepy. I would argue that the distrubing themes are sensationalized and not appropriately conveyed the author,
+            especially considering it appears to have a younger target audience. I don't shy away from dark topics, but do so when they read more like a fantasy. </p>
+
+        </div>
+      </div>
+
    <div class="col-sm-6 col-md-4">
         <div class="book-card">
           <img src="/images/book_covers/Vincent_by_himself.jpeg" alt="Book 1 Cover" class="book-image img-fluid">
@@ -403,11 +410,11 @@
 
         </div>
       </div>
-    </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
 </html>
+
 
